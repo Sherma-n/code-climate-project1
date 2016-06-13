@@ -39,7 +39,7 @@ $(document).ready(function(){               //wait page load
     var currentPlayer = game.currentPlayer;       //deter which player does this belong to
     var betSize       = game.currentPlayerBetSize;//determine current bet size
     if (currentPlayer.credits < betSize) {        //check if player is able to bet
-      alert("Insufficient to make bet");          //can't bet man, no value
+      Alert("Insufficient to make bet");          //can't bet man, no value
     } else {                                      //minus player bet
       currentPlayer.credits       -= betSize;     //update credits
       currentPlayer.bets[betType] += betSize;     //updating credits

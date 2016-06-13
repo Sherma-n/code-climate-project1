@@ -88,24 +88,25 @@ var Game = function(defaultCredits) {
    this.rollImage = function (diceRoll, diceID) {
       switch (diceRoll) {
         case 1:
-          $(diceID).css("background-image", "url(http://www.clipartkid.com/images/170/dice-faces-clipart-1-9-reaching-teachers-labd0b-clipart.png)");
+          var picture = "url(http://www.clipartkid.com/images/170/dice-faces-clipart-1-9-reaching-teachers-labd0b-clipart.png)";
           break;
         case 2:
-          $(diceID).css("background-image", "url(http://i363.photobucket.com/albums/oo79/fizzgig2k4/dice%20face%20images/lego2dice-1-2.jpg)");
+          var picture = "url(http://i363.photobucket.com/albums/oo79/fizzgig2k4/dice%20face%20images/lego2dice-1-2.jpg)";
           break;
         case 3:
-          $(diceID).css("background-image", "url(http://liarsdice.co/static/face3.png)");
+          var picture = "url(http://liarsdice.co/static/face3.png)";
           break;
         case 4:
-          $(diceID).css("background-image", "url(http://dobbelsteen.virtuworld.net/img/4c.gif)");
+          var picture = "url(http://dobbelsteen.virtuworld.net/img/4c.gif)";
           break;
         case 5:
-          $(diceID).css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/5/55/Alea_5.png)");
+          var picture = "url(https://upload.wikimedia.org/wikipedia/commons/5/55/Alea_5.png)";
           break;
         case 6:
-          $(diceID).css("background-image", "url(http://www.zonkthegame.com/img/6.png)");
+          var picture = "url(http://www.zonkthegame.com/img/6.png)";
           break;
-      };
+      }
+      $(diceID).css("background-image", picture);
    };
 
    this.diceImages = function (dice1, dice2, dice1Roll, dice2Roll) {                    //Sets background & choosing an image.
@@ -130,22 +131,22 @@ var Game = function(defaultCredits) {
 // ====================
   this.pairWins = function (dice1, dice2) {                                    //Push pairs into win arrays
     if (dice1 === dice2)                        { this.winners.push("pair" + dice1);}
-    else                                        {console.log("No Pairs")};
+    else                                        {console.log("No Pairs")}
   }
 
   this.diceWins = function (diceTotal)    {                                      //Push dices into win arrays
-    if (diceTotal > 1)                          { this.winners.push("bets" + diceTotal);}
-    else                                        {console.log("Error no dice rolls")};
+    if (diceTotal > 1)                          { this.winners.push("bets" + diceTotal)}
+    else                                        {console.log("Error no dice rolls")}
   }
 
   this.evenWins = function (diceTotal)    {                                      //Push even and odds into win arrays
-    if ((diceTotal%2) === 0)                    { this.winners.push("even"); }
-    else                                        { this.winners.push("odd"); }
+    if ((diceTotal%2) === 0)                    { this.winners.push("even");}
+    else                                        { this.winners.push("odd");}
   };
 
   this.bigWins = function (diceTotal)     {                                      //Push big and small into win arrays
-    if (diceTotal >= 7)                         { this.winners.push("big"); }
-    else                                        { this.winners.push("small"); }
+    if (diceTotal >= 7)                         { this.winners.push("big");}
+    else                                        { this.winners.push("small");}
   };
 
 
@@ -190,7 +191,7 @@ var Game = function(defaultCredits) {
         player.credits          += amount * ratio;                              //add payout to player
         player.bets[betName]    = 0;                                            //Reset payer bets
       }
-    };
+    }
   };
 
   this.clearTable = function() {                                             //clearing the table at the end of each round
