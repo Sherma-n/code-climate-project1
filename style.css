@@ -1,0 +1,132 @@
+/*Default css settings*/
+.gameBoard {
+	background-color: rgba(61,61,61,.8);
+	margin: 40px 50px 60px 10px;
+	padding: 10px 0 0 0;
+	border: 3px solid black;
+	border-radius: 30px;
+	color: black;
+}
+
+.bets {
+	background-color: green;
+	font-family: 'UnifrakturCook', cursive;
+	border-color:white;
+}
+
+.betsOne {
+	border-radius: 20px;
+	text-align: center;
+	margin: 20px 0px 20px	0;
+	border: 3px solid white;
+	vertical-align: middle;
+}
+
+.betsTwo {
+	text-align: left;
+	border: 3px solid white;
+	padding: 0 5px 0 0;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+.betsThree {
+	text-align: left;
+	border: 3px solid white;
+	vertical-align: middle;
+	margin: 20px 0px 20px	0;
+}
+
+.panelPlayer {
+	background-color: green;
+	border: 3px solid white;
+	border-bottom: 3px solid black;
+	padding: 0;
+	font-family: 'UnifrakturCook', cursive;
+	margin:0 0 2px 0;
+	display: inline;
+	color:white;
+
+}
+
+.chips {
+	background-color: green;
+	text-align: center;
+	padding: 16px;
+	background-image: url("http://www.chipsandgames.com/images/products/detail/213wt.png");
+	background-size: contain;
+	background-size: cover;
+	border-radius: 40px;
+	color: black;
+}
+.playerValue {
+	background-color: green;
+	margin: 5px;
+	font-color: white;
+	color: white;
+	font-size: 50px;
+}
+/*default settings end*/
+/*Javascript css*/
+.placedWagerOne {
+	background-color: rgba(200,140,140,.8);
+	border-radius: 20px;
+	text-align: center;
+	margin: 20px 0px 20px	0;
+	border: 3px solid red;
+	vertical-align: middle;
+}
+
+.highlightBox {
+	background-color: rgba(180,180,180, .8);
+}
+
+.betIn {
+	background-color: red;
+}
+
+.gameTitle {
+	text-align: center;
+	padding: 95px 0 95px 0;
+	background-repeat: no-repeat;
+}
+
+.craps {
+	text-align: center;
+	padding: 90px 0 130px 0;
+}
+
+.mainbody {
+	background-image: url("./images/mainback.jpeg");
+}
+
+#rollGame {
+	border: 10px solid white;
+	border-radius: 200px;
+	background-color: green;
+	font-family: 'UnifrakturCook', cursive;
+	font-size: 40px;
+	display: inline;
+	text-align: center;
+}
+
+#resetGame {
+	border: 6px solid grey;
+	border-radius: 200px;
+	background-color: green;
+	font-family: 'UnifrakturCook', cursive;
+	font-size: 20px;
+	display: inline;
+	text-align: center;
+	font-color: white;
+}
+
+.dices {
+	width: 100%;
+	height: 95px;
+	background-color: rgba(61,61,61,.8);
+	padding: 50px;
+	color:red;
+}
+
+.playerStuff {}
